@@ -1,0 +1,13 @@
+name: Scrape Data (prod)
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+          echo "hello world"
